@@ -11,6 +11,6 @@ My little boilerplate for apps and SPA websites based on Webpack 2.x
 (see webpack.opts.js for additional config options)
 
 TODO: 
-- Karma/Jasmine + tests
+- Karma/Jasmine - add run scripts in Webpack config;
 - Fix access to Bootstrap variables
 
