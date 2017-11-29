@@ -12,12 +12,13 @@ describe('Dummy component', () => {
 
   beforeEach(()=>{
     TestBed.configureTestingModule({ declarations: [ DummyComponent ] })
+
+    fixture = TestBed.createComponent(DummyComponent)
+    comp = fixture.componentInstance;
+    de = fixture.debugElement.query(By.css('h1'));
+    el = de.nativeElement;
   });
- 
-  fixture = TestBed.createComponent(DummyComponent)
-  comp = fixture.componentInstance;
-  de = fixture.debugElement.query(By.css('h1'));
-  el = de.nativeElement;
+  
 
   it('No title in the DOM until manually call `detectChanges`', () => {
     expect(el.textContent).toEqual('');
